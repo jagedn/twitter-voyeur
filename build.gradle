@@ -3,7 +3,7 @@ plugins{
 }
 import groovy.json.*
 
-group 'no-more-8m'
+group 'twitter-voyeur'
 version '0.0.1'
 
 task clean(){
@@ -34,6 +34,6 @@ task zipExtension(type:Zip,dependsOn:updateManifest){
 
 task build(dependsOn:zipExtension){
     doLast{        
-        file('build/last.zip').renameTo "build/no-more-8m-addon-v${version}.zip"
+        file('build/last.zip').renameTo "build/twitter-voyeur-v${version}.zip"
     }
 }
